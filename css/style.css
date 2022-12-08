@@ -1,3 +1,21 @@
 :root {
+    --bs-primary: #762638;
     --bs-primary-rgb: 118,38,56;
+}
+
+.min-h-auto { min-height:auto }
+
+.form-check-input:checked {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.form-check-input:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb),25%);
+}
+
+@media(min-width:576px){
+    .border-sm-top {
+        border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    }
 }
