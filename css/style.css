@@ -5,6 +5,10 @@
 
 .min-h-auto { min-height:auto }
 
+.form-control {
+    background-color: #f1f4ff;
+}
+
 .form-check-input:checked {
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
