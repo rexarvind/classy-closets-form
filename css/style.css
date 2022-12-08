@@ -24,3 +24,9 @@
         border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
     }
 }
+@media(min-width:756px){
+    #page1-notes { width:240px }
+}
+@media(min-width:1024px){
+    #page1-notes { width:214px }
+}
