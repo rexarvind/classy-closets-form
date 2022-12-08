@@ -22,7 +22,7 @@
             </div>
             <div class="d-flex gap-2 align-items-center">
                 <span class="h5 text-nowrap fw-bold text-decoration-underline">Install End Date</span>
-                <input type="text" class="form-control rounded-0" style="width:125px;" />
+                <input type="text" class="form-control rounded-0 border-primary" style="width:125px;" />
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@
         <div class="col-sm-6 col-lg-4">
             <div class="d-flex gap-2 align-items-center justify-content-between">
                 <span class="h5 text-nowrap text-end w-100 fw-bold text-decoration-underline">Time of Install</span>
-                <input type="text" class="form-control rounded-0" style="width:180px;" />
+                <input type="text" class="form-control rounded-0 border-primary" style="width:180px;" />
             </div>
             <div class="d-flex justify-content-evenly ms-auto" style="width:190px;">
                 <div class="form-check">
@@ -94,7 +94,13 @@
             <input type="text" class="form-control form-control-sm rounded-0">
         </div>
     </div>
-    <div class="d-flex justify-content-between py-2">
+    <div class="d-flex gap-2 flex-sm-row-reverse flex-wrap justify-content-end justify-content-sm-between py-2">
+        <div class="">
+            <div class="d-flex gap-1 align-items-center">
+                <span class="h5 fw-bold text-end d-block">Door&nbsp;SqFt&nbsp;:</span>
+                <input type="text" class="form-control form-control-sm rounded-0">
+            </div>
+        </div>
         <div class="w-100" style="max-width:370px;">
             <div class="d-flex gap-1 align-items-center mb-3">
                 <span class="text-end d-block w-100">Customer's Name&nbsp;:</span>
@@ -117,33 +123,71 @@
                 <textarea rows="4" class="form-control form-control-sm rounded-0 min-h-auto py-0"></textarea>
             </div>
         </div>
-        <div class="">
-            <div class="d-flex gap-1 align-items-center">
-                <span class="h5 fw-bold text-end d-block">Door&nbsp;SqFt&nbsp;:</span>
-                <input type="text" class="form-control form-control-sm rounded-0">
-            </div>
-        </div>
     </div>
     <div class="mb-5">
         <div class="d-flex gap-1 align-items-center pe-sm-2 pe-md-4">
             <span id="page1-notes" class="text-end d-block align-self-start">Notes&nbsp;:</span>
-            <textarea rows="12" class="form-control form-control-sm rounded-0 min-h-auto py-0"></textarea>
+            <textarea rows="12" class="form-control form-control-sm rounded-0 min-h-auto py-0 border-dark"></textarea>
         </div>
     </div>
 
-    <div class="d-flex justify-content-between align-items-center mb-5">
+    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center mb-5">
         <div>
             <img src="./img/logo.png" class="max-w-100" alt="logo" />
         </div>
         <div class="d-inline-flex align-items-center">
             <span class="text-end fw-bold d-block w-100">Page&nbsp;#&nbsp;</span>
-            <input type="text" class="form-control rounded-0" style="width:50px;">
+            <input type="text" class="form-control rounded-0 border-dark" style="width:50px;">
         </div>
     </div>
 
-    <div class="">
+    <div class="mb-5">
         <p class="text-center">Installers, if the customer is available you <span class="fst-italic fw-bold">MUST</span> ask if we can process their final payment (if applicable). <span class="text-decoration-underline">This form needs to be <span class="fst-italic fw-bold">SIGNED</span> if they authorize use of the same credit card.</span> "Run CC" is not enough to run the card.<br />Please fill this out to help with collecting payments.</p>
     </div>
+
+    <div class="row justify-content-between mb-5">
+        <div class="col-sm-6 col-md-5 col-xl-4">
+            <div class="d-flex gap-1 align-items-center">
+                <span class="text-end fw-bold d-block">Project&nbsp;#</span>
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+                <span class="text-end fw-bold d-block">Project&nbsp;#</span>
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+                <span class="text-end fw-bold d-block">Project&nbsp;#</span>
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+                <span class="text-end fw-bold d-block">Project&nbsp;#</span>
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-5">
+            <div class="d-flex gap-1 align-items-center opacity-0 pe-none">
+                <span class="text-end fw-bold d-block">Project&nbsp;#</span>
+                <input type="hidden" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+                <span class="text-end fw-bold d-block w-100">Total&nbsp;Due&nbsp;$</span>
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+                <span class="text-end fw-bold d-block w-100">40%&nbsp;at&nbsp;Time&nbsp;of&nbsp;Install&nbsp;$</span>
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+            <div class="d-flex gap-1 align-items-center">
+                <span class="text-end fw-bold d-block w-100">10%&nbsp;at&nbsp;Completion&nbsp;$</span>
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark" />
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <p class="text-center">If 100% of the job is completed and no adjustments are needed the "Total Due" is to be collected at this time.</p>
+    </div>
+
 
 
 </body>
