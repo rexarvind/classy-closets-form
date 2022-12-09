@@ -33,6 +33,15 @@
 @media(min-width:756px){
     #page1-notes { width:240px }
 }
+@media(min-width:992px){
+    .w-lg-75 { width:75% !important }
+}
 @media(min-width:1024px){
     #page1-notes { width:214px }
+}
+@media(min-width:1200px) and (max-width:1399px){
+    .page1-header-input-project,
+    .page1-header-input-work-order {
+        width: 178px;
+    }
 }
