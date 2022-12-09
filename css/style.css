@@ -5,11 +5,8 @@
     --bs-font-sans-serif: "Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-.min-h-auto { min-height:auto }
-
-.form-control {
-    background-color: #f1f4ff;
-}
+.min-h-auto { min-height:auto; }
+.form-control { background-color: #f1f4ff; }
 
 .form-check-input:checked {
     background-color: var(--bs-primary);
@@ -21,14 +18,10 @@
     box-shadow: 0 0 0 2px rgba(var(--bs-primary-rgb),25%);
 }
 
-.logo {
-    width: 190px;
-}
+.logo { width: 190px; }
 
 @media(min-width:576px){
-    .border-sm-top {
-        border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-    }
+    .border-sm-top { border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color); }
 }
 @media(min-width:756px){
     #page1-notes { width:240px }
@@ -41,7 +34,5 @@
 }
 @media(min-width:1200px) and (max-width:1399px){
     .page1-header-input-project,
-    .page1-header-input-work-order {
-        width: 178px;
-    }
+    .page1-header-input-work-order { width: 178px; }
 }
