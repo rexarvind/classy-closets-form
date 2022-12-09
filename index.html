@@ -27,7 +27,7 @@
 
     <div class="d-flex flex-wrap align-items-center justify-content-between">
         <h1 class="h2 text-primary fw-bold fst-italic">Installation Information for:</h1>
-        <div class="d-flex flex-wrap gap-2 align-items-center">
+        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-end">
             <div class="d-flex gap-2 align-items-center">
                 <span class="h5 text-nowrap fw-bold text-decoration-underline">Install Start Date</span>
                 <input type="text" class="form-control rounded-0" style="width:125px;" />
@@ -38,8 +38,8 @@
             </div>
         </div>
     </div>
-    <div class="row gx-2 mt-2">
-        <div class="col-sm-6 col-lg-4 border-top border-dark border-2 d-flex flex-column justify-content-evenly">
+    <div class="row gx-2 mt-2 gy-1 mb-1">
+        <div class="col-sm-6 col-lg-4 border-top pt-1 border-dark border-2 d-flex flex-column justify-content-evenly">
             <div class="d-flex gap-2 align-items-center pe-lg-2">
                 <span class="h5 text-end fw-bold text-primary d-block w-100 w-lg-75">Project #</span>
                 <input type="text" class="form-control rounded-0 px-lg-1 page1-header-input-project">
@@ -49,7 +49,7 @@
                 <input type="text" class="form-control rounded-0 px-lg-1 page1-header-input-work-order">
             </div>
         </div>
-        <div class="col-sm-6 col-lg-4 border-sm-top border-dark border-2">
+        <div class="col-sm-6 col-lg-4 border-sm-top pt-1 border-dark border-2">
             <div class="d-flex gap-1 align-items-center">
                 <span class="text-end d-block w-100">Expected Days of Install&nbsp;:</span>
                 <input type="text" class="form-control form-control-sm rounded-0 min-h-auto py-0">
@@ -88,7 +88,7 @@
             </div>
         </div>
     </div>
-    <div class="d-flex flex-wrap flex-lg-nowrap gap-2 py-1 align-items-center justify-content-evenly border-top border-dark border-2 border-bottom">
+    <div class="d-flex flex-wrap flex-lg-nowrap gap-2 py-1 align-items-center justify-content-end justify-content-lg-evenly border-top border-dark border-2 border-bottom">
         <div class="d-flex gap-1 align-items-center ps-lg-5">
             <span class="text-end d-block ps-lg-5 ms-lg-3">&nbsp;Contact&nbsp;:</span>
             <input type="text" class="form-control form-control-sm rounded-0" style="width:145px;">
@@ -555,15 +555,15 @@
     <div class="border-top border-2 border-primary border-bottom py-1 mb-3"></div>
 
     <div class="d-flex flex-wrap mb-5 px-md-3 px-lg-5">
-        <div class="col">
+        <div class="col-4 col-md">
             <p class="fw-bold border-bottom border-dark mb-0">Project #</p>
             <input type="text" class="form-control form-control-sm rounded-0 border-0 min-h-auto">
         </div>
-        <div class="col">
+        <div class="col-4 col-md">
             <p class="fw-bold border-bottom border-dark mb-0">Trans Type</p>
             <input type="text" class="form-control form-control-sm rounded-0 border-0 min-h-auto">
         </div>
-        <div class="col">
+        <div class="col-4 col-md">
             <p class="fw-bold border-bottom border-dark mb-0">Doc #</p>
             <input type="text" class="form-control form-control-sm rounded-0 border-0 min-h-auto">
         </div>
@@ -720,10 +720,14 @@
     </div>
 
     <div class="d-flex align-items-center">
-        <div class="ps-4 pe-3 fw-bold">(D)&nbsp;</div>
-        <div class="d-flex gap-1 align-items-center flex-grow-1">
-            <p class="flex-grow-1 mb-0 flex-shrink-0"><span class="text-nowrap fw-bold">Designer</span> <span class="text-secondary fst-italic">(Designer name and explanation)</span></p>
-            <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark">
+        <div class="ps-4 pe-3 fw-bold align-self-start">(D)&nbsp;</div>
+        <div class="d-flex gap-1 align-items-center flex-grow-1 flex-wrap">
+            <div class="d-inline-block">
+                <p class="flex-grow-1 mb-0 flex-shrink-0"><span class="text-nowrap fw-bold">Designer</span> <span class="text-secondary fst-italic">(Designer name and explanation)</span></p>
+            </div>
+            <div class="d-inline-block flex-grow-1">
+                <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark">
+            </div>
         </div>
     </div>
     <div class="d-flex align-items-center">
@@ -758,7 +762,7 @@
     </div>
 
     <div class="d-flex align-items-center mb-4">
-        <div class="ps-4 pe-3 fw-bold">(CS)</div>
+        <div class="ps-4 pe-3 fw-bold ">(CS)</div>
         <div class="d-flex gap-1 align-items-center flex-grow-1">
             <span class="text-nowrap fw-bold">Cutsheets</span>
             <input type="text" class="form-control rounded-0 border-0 border-bottom border-dark">
@@ -908,7 +912,7 @@
 
 
     <div class="d-flex">
-        <div class="pe-2">1)</div>
+        <div class="pe-2 align-self-start">1)</div>
         <div class="w-100">
             <div class="d-flex flex-wrap">
                 <p class="mb-0 me-2">Is the job 100% complete?</p><p class="fw-bold">YES &nbsp; or &nbsp; NO</p>
@@ -916,7 +920,7 @@
         </div>
     </div>
     <div class="d-flex align-items-center">
-        <div class="pe-2">2)</div>
+        <div class="pe-2 align-self-start">2)</div>
         <div class="w-100">
             <div class="d-flex flex-wrap align-items-center">
                 <p class="mb-0 me-2">If NO - What % is complete?</p>
@@ -928,7 +932,7 @@
         </div>
     </div>
     <div class="d-flex align-items-center">
-        <div class="pe-2">3)</div>
+        <div class="pe-2 align-self-start">3)</div>
         <div class="w-100">
             <div class="d-flex flex-wrap align-items-center">
                 <p class="mb-0 me-2">If NO - Give a brief description of remaining work:</p>
